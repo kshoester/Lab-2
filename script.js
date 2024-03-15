@@ -8,6 +8,19 @@ const map = new mapboxgl.Map({
 });
 
 map.on('load', () => {
+    map.addSource('rinks-data',{
+        type: 'geojson',
+        data: 'https://raw.githubusercontent.com/kshoester/Lab-2/main/indoor-ice-rinks-data.geojson'
+    });
+    map.addLayer({
+        'id': 'indoor-ice-rinks',
+        'type': 'circle',
+        'source': 'rinks-data',
+        'paint': {
+            'circle-radius': 4,
+            'circle-color': '#6388bf'
+        }
+    });
 
     map.addSource('gspaces-data', {
         type: 'vector',
