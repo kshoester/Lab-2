@@ -1,0 +1,7 @@
+/* position map container to closest html element */
+.map-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toronto Map</title>
+    <!--import mapbox gl js library, mapbox, custom css stylesheets. placed in <head> so they are loaded first-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--set container for map, reference js file for map functionality. scripts interact with page contents so html content can be loaded first before script is executed-->
+    <div id='my-map' class="map-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
